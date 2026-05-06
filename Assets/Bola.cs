@@ -1,16 +1,25 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Bola : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
+    public InputAction lanzarAction;
+    private bool isGameStarted = false;
+
+    private void OnEnable() {
+        lanzarAction.Enable();
     }
 
-    // Update is called once per frame
+    private void OnDisable() {
+        lanzarAction.Disable();
+    }
+
     void Update()
     {
-        
+        if (!isGameStarted && lanzarAction.triggered)
+        {
+            isGameStarted = true;
+            // Tu lógica de lanzamiento aquí
+        }
     }
 }

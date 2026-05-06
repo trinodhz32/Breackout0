@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 3248564708711833034}
   - component: {fileID: 601170643230010210}
   - component: {fileID: 5425989815756223891}
+  - component: {fileID: -7946455717913249602}
   m_Layer: 0
   m_Name: Bola
-  m_TagString: Untagged
+  m_TagString: Bola
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -140,3 +141,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
+--- !u!114 &-7946455717913249602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8072478456268050064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21180abb8787144b397fdb4a4784bdb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Bola
+  lanzarAction:
+    m_Name: Lanzar
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: f1541956-ba86-47e9-9260-dcf2a8ca0770
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
