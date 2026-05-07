@@ -653,6 +653,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5425989815756223891, guid: 878046be6a8ba4b2d8b1cff9756d96e3, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8072478456268050064, guid: 878046be6a8ba4b2d8b1cff9756d96e3, type: 3}
       propertyPath: m_Name
       value: Bola

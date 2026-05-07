@@ -31,7 +31,8 @@ public class Jugador : MonoBehaviour
         //     this.transform.Translate(Vector3.left * VelocidadPaddle * Time.deltaTime);
         // }
         
-      
+      transform.Translate(Input.GetAxis("Horizontal") * Vector3.down * VelocidadPaddle * Time.deltaTime);
+        
         pos.x = mouseWorldPos.x;
         if (pos.x < -limiteX)
         {
