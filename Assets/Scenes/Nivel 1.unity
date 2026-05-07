@@ -602,6 +602,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 15398842}
     m_Modifications:
     - target: {fileID: -7946455717913249602, guid: 878046be6a8ba4b2d8b1cff9756d96e3, type: 3}
+      propertyPath: velocidadBola
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: -7946455717913249602, guid: 878046be6a8ba4b2d8b1cff9756d96e3, type: 3}
       propertyPath: lanzarAction.m_Name
       value: Lanzar
       objectReference: {fileID: 0}
