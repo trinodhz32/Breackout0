@@ -8,33 +8,53 @@ public class Puntaje : MonoBehaviour
 {
     public Transform transformPuntajeAlto;
     public Transform transformPuntajeActual;
+    public PuntajeAlto1 puntajeAltoSO;
 
     public TMP_Text textoPuntajeAlto;
     public TMP_Text textoActual;
-
-    public int puntos = 0;
-    public int puntajeAlto = 1000;
+    
 
     void Start()
     {
-        if (PlayerPrefs.HasKey("Puntaje Alto"));
-        {
-            puntajeAlto = PlayerPrefs.GetInt("Puntaje Alto");
-        }
+        transformPuntajeActual= GameObject.Find("PuntajeActual").transform;
+        transformPuntajeAlto = GameObject.Find("PuntajeAlto").transform;
+        textoActual = transformPuntajeActual.GetComponent<TMP_Text>();
+        textoPuntajeAlto = transformPuntajeAlto.GetComponent<TMP_Text>();
+        //if (PlayerPrefs.HasKey("PuntajeAlto"))
+        //{
+            //puntajeAlto = PlayerPrefs.GetInt("PuntajeAlto");
+            textoPuntajeAlto.text = $"PuntajeAlto: {puntajeAltoSO.puntajeAlto}";
+            puntajeAltoSO.puntaje = 0;
+        //}
+        // if (PlayerPrefs.HasKey("Puntaje Alto"));
+        // {
+        //     //puntajeAlto = PlayerPrefs.GetInt("Puntaje Alto");
+        // }
     }
-
+    private void FixedUpdate()
+    {
+        puntajeAltoSO.puntaje += 50;
+    }
+ 
     void Update()
     {
-        puntos += 1;
-
-        textoActual.text = "Puntaje Actual: " + puntos;
-
-        if (puntos > puntajeAlto)
+        textoActual.text = $"PuntajeActual: {puntajeAltoSO.puntaje}";
+        if (puntajeAltoSO.puntaje > puntajeAltoSO.puntajeAlto)
         {
-            puntajeAlto = puntos;
-            PlayerPrefs.SetInt("Puntaje Alto", puntos);
+            puntajeAltoSO.puntajeAlto = puntajeAltoSO.puntaje;
+            textoPuntajeAlto.text = $"PuntajeAlto: {puntajeAltoSO.puntajeAlto}";
+            //PlayerPrefs.SetInt("PuntajeAlto", puntos);
         }
+        //puntajeAltoSO += 50;
 
-        textoPuntajeAlto.text = "Puntaje Alto: " + puntajeAlto;
+        // textoActual.text = "Puntaje Actual: " + puntos;
+
+        // if (puntos > puntajeAlto)
+        // {
+        //     puntajeAlto = puntos;
+        //     //PlayerPrefs.SetInt("Puntaje Alto", puntos);
+        // }
+
+        // textoPuntajeAlto.text = "Puntaje Alto: " + puntajeAlto;
     }
 }

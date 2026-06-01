@@ -230,7 +230,7 @@ GameObject:
   - component: {fileID: 242767064}
   - component: {fileID: 242767063}
   m_Layer: 5
-  m_Name: puntaje actual
+  m_Name: PuntajeActual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -369,6 +369,7 @@ GameObject:
   - component: {fileID: 330585547}
   - component: {fileID: 330585548}
   - component: {fileID: 330585549}
+  - component: {fileID: 330585550}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -533,6 +534,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a650f1b03c904f01a5a33546f48214f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Suscriptor
+--- !u!114 &330585550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330585543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b7082f6959b24e3d9d4ce27ecbe883d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Puntaje
+  transformPuntajeAlto: {fileID: 0}
+  transformPuntajeActual: {fileID: 0}
+  puntajeAltoSO: {fileID: 11400000, guid: 275a77f92c7fd47b69109ea5a822d434, type: 2}
+  textoPuntajeAlto: {fileID: 0}
+  textoActual: {fileID: 0}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -899,17 +917,16 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 940154272}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4b7082f6959b24e3d9d4ce27ecbe883d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Puntaje
   transformPuntajeAlto: {fileID: 1411005685}
   transformPuntajeActual: {fileID: 242767062}
+  puntajeAltoSO: {fileID: 11400000, guid: 275a77f92c7fd47b69109ea5a822d434, type: 2}
   textoPuntajeAlto: {fileID: 1411005686}
   textoActual: {fileID: 242767063}
-  puntos: 0
-  puntajeAlto: 1000
 --- !u!1001 &1218737325
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1175,7 +1192,7 @@ GameObject:
   - component: {fileID: 1411005687}
   - component: {fileID: 1411005686}
   m_Layer: 5
-  m_Name: puntaje alto
+  m_Name: PuntajeAlto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
