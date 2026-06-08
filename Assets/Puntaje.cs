@@ -23,6 +23,7 @@ public class Puntaje : MonoBehaviour
         //if (PlayerPrefs.HasKey("PuntajeAlto"))
         //{
             //puntajeAlto = PlayerPrefs.GetInt("PuntajeAlto");
+            puntajeAltoSO.Cargar();
             textoPuntajeAlto.text = $"PuntajeAlto: {puntajeAltoSO.puntajeAlto}";
             puntajeAltoSO.puntaje = 0;
         //}
@@ -43,6 +44,7 @@ public class Puntaje : MonoBehaviour
         {
             puntajeAltoSO.puntajeAlto = puntajeAltoSO.puntaje;
             textoPuntajeAlto.text = $"PuntajeAlto: {puntajeAltoSO.puntajeAlto}";
+            puntajeAltoSO.Guardar();
             //PlayerPrefs.SetInt("PuntajeAlto", puntos);
         }
         //puntajeAltoSO += 50;
