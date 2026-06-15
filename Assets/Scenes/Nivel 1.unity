@@ -1044,6 +1044,27 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 15398837}
   m_SourcePrefab: {fileID: 100100000, guid: 6aa3a57fd22104004956e420f48ff425, type: 3}
+--- !u!1 &1266419571 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4822027820134229177, guid: 6eea964aff5a045fa8b448d441c994dd, type: 3}
+  m_PrefabInstance: {fileID: 1385469195}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1266419577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266419571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb3ddf32a08a4e36bfad6ed47e7150e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Bloque
+  resistencia: 1
+  AumentarPuntaje:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1385469195
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1103,7 +1124,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4822027820134229177, guid: 6eea964aff5a045fa8b448d441c994dd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1266419577}
   m_SourcePrefab: {fileID: 100100000, guid: 6eea964aff5a045fa8b448d441c994dd, type: 3}
 --- !u!1 &1387219859
 GameObject:
@@ -1184,7 +1208,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 1387219862}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
@@ -1447,6 +1471,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2921148126632228643, guid: 878046be6a8ba4b2d8b1cff9756d96e3, type: 3}
   m_PrefabInstance: {fileID: 2093954276}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1794755954 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7654611981783556683, guid: dc1b739a1c76f4245acf5ff289d941bd, type: 3}
+  m_PrefabInstance: {fileID: 7083541031057957651}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1794755961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794755954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0425d7c1a162b4737a251f9fab4c84f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BloqueSlime
+  resistencia: 1
+  AumentarPuntaje:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2004199871
 GameObject:
   m_ObjectHideFlags: 0
@@ -1849,10 +1894,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bloque_Obsidiana
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4779479967385812141, guid: dc1b739a1c76f4245acf5ff289d941bd, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7654611981783556683, guid: dc1b739a1c76f4245acf5ff289d941bd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1794755961}
   m_SourcePrefab: {fileID: 100100000, guid: dc1b739a1c76f4245acf5ff289d941bd, type: 3}
 --- !u!1001 &8477102299861210957
 PrefabInstance:
@@ -1906,6 +1955,10 @@ PrefabInstance:
       propertyPath: m_UseGravity
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5668151791586312623, guid: 8b5191ce1a5724d519d74bb427e7d755, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7446827190474581322, guid: 8b5191ce1a5724d519d74bb427e7d755, type: 3}
       propertyPath: m_Name
       value: Bloque_Madera
@@ -1936,6 +1989,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BloqueMadera
   resistencia: 1
+  AumentarPuntaje:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &8817441636588168571
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1992,6 +2048,10 @@ PrefabInstance:
       propertyPath: m_UseGravity
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6942728127713268741, guid: e865e06bd26bd4b8fa10721ee7554611, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2018,6 +2078,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BloquePiedra
   resistencia: 1
+  AumentarPuntaje:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

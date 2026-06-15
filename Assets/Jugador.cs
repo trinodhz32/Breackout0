@@ -16,6 +16,16 @@ public class Jugador : MonoBehaviour
         mainCam = Camera.main;
     }
 
+     private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Bola")
+        {
+        Vector3 direccion = collision.contacts[0].point - transform.position;
+        direccion = direccion.normalized;
+        collision.rigidbody.linearVelocity = collision.gameObject.GetComponent<Bola>().velocidadBola * direccion;
+        }
+    }
+
     void Update()
     {
         Vector2 mouseScreenPos = Mouse.current.position.ReadValue();
