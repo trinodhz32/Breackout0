@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 public class Bloque : MonoBehaviour
 {
-    public int resistencia = 3;
+    public int resistencia = 1;
     public UnityEvent AumentarPuntaje;
 
     public void OnCollisionEnter(Collision collision)

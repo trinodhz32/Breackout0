@@ -416,6 +416,7 @@ GameObject:
   - component: {fileID: 330585548}
   - component: {fileID: 330585549}
   - component: {fileID: 330585550}
+  - component: {fileID: 330585551}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -597,6 +598,27 @@ MonoBehaviour:
   puntajeAltoSO: {fileID: 11400000, guid: 275a77f92c7fd47b69109ea5a822d434, type: 2}
   textoPuntajeAlto: {fileID: 0}
   textoActual: {fileID: 0}
+--- !u!114 &330585551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330585543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55a97e2a224ce400b99511c9038af912, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ControlBordes
+  radio: 1
+  mantenerEnPantalla: 0
+  estarEnPantalla: 1
+  anchoCamara: 0
+  altoCamara: 0
+  salioDerecha: 0
+  salioIzquierda: 0
+  salioArriba: 0
+  salioAbajo: 0
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -1065,6 +1087,11 @@ MonoBehaviour:
   AumentarPuntaje:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &1292772878 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8072478456268050064, guid: 878046be6a8ba4b2d8b1cff9756d96e3, type: 3}
+  m_PrefabInstance: {fileID: 2093954276}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1385469195
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1471,6 +1498,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2921148126632228643, guid: 878046be6a8ba4b2d8b1cff9756d96e3, type: 3}
   m_PrefabInstance: {fileID: 2093954276}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1592317626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292772878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55a97e2a224ce400b99511c9038af912, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ControlBordes
+  radio: 1
+  mantenerEnPantalla: 0
+  estarEnPantalla: 1
+  anchoCamara: 0
+  altoCamara: 0
+  salioDerecha: 0
+  salioIzquierda: 0
+  salioArriba: 0
+  salioAbajo: 0
 --- !u!1 &1794755954 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7654611981783556683, guid: dc1b739a1c76f4245acf5ff289d941bd, type: 3}
@@ -1714,7 +1762,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7946455717913249602, guid: 878046be6a8ba4b2d8b1cff9756d96e3, type: 3}
       propertyPath: velocidadBola
-      value: 50
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -7946455717913249602, guid: 878046be6a8ba4b2d8b1cff9756d96e3, type: 3}
       propertyPath: lanzarAction.m_Name
@@ -1783,7 +1831,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8072478456268050064, guid: 878046be6a8ba4b2d8b1cff9756d96e3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1592317626}
   m_SourcePrefab: {fileID: 100100000, guid: 878046be6a8ba4b2d8b1cff9756d96e3, type: 3}
 --- !u!1001 &2319534703954071521
 PrefabInstance:
