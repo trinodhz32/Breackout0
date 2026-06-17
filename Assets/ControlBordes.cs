@@ -25,7 +25,6 @@ public class ControlBordes : MonoBehaviour
     {
         
     }
-
     // Update is called once per frame
     void LateUpdate()
     {

@@ -615,10 +615,10 @@ MonoBehaviour:
   estarEnPantalla: 1
   anchoCamara: 0
   altoCamara: 0
-  salioDerecha: 0
-  salioIzquierda: 0
-  salioArriba: 0
-  salioAbajo: 0
+  salioDerecha: 1
+  salioIzquierda: 1
+  salioArriba: 1
+  salioAbajo: 1
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
