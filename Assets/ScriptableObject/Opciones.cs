@@ -2,17 +2,24 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class Opciones : MonoBehaviour
+[CreateAssetMenu(fileName = "Opciones", menuName = "Herramientas/Opciones", order = 1)]
+public class Opciones : PuntajePersistente
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+public float velocidadBola = 30;
+public dificultad NivelDificultad = dificultad.facil;
 
-    // Update is called once per frame
-    void Update()
+public enum dificultad
     {
-        
+        facil,
+        normal,
+        dificil
+    }
+    public void CambiarVelocidad(float nuevaVelocidad)
+    {
+        velocidadBola = nuevaVelocidad;
+    }
+    public void CambiarDificulad(int nuevaDificultad)
+    {
+        NivelDificultad = (dificultad)nuevaDificultad;
     }
 }
