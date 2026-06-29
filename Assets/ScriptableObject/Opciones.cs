@@ -18,7 +18,7 @@ public enum dificultad
     {
         velocidadBola = nuevaVelocidad;
     }
-    public void CambiarDificulad(int nuevaDificultad)
+    public void CambiarDificultad(int nuevaDificultad)
     {
         NivelDificultad = (dificultad)nuevaDificultad;
     }
