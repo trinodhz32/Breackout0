@@ -723,6 +723,7 @@ GameObject:
   - component: {fileID: 309072249}
   - component: {fileID: 309072248}
   - component: {fileID: 309072247}
+  - component: {fileID: 309072251}
   m_Layer: 5
   m_Name: AdminVidas
   m_TagString: Untagged
@@ -815,6 +816,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &309072251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309072246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4aa1f4d1e98fe45d49a22d81a453ea18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AdministradorVidas
+  vidas: []
+  bolaPrefab: {fileID: 1292772878}
+  MenuFinJuego: {fileID: 871263446}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -832,6 +848,7 @@ GameObject:
   - component: {fileID: 330585550}
   - component: {fileID: 330585551}
   - component: {fileID: 330585552}
+  - component: {fileID: 330585553}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1048,6 +1065,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MenuPausa
   menuPausa: {fileID: 1457454842}
   menuOpciones: {fileID: 1860765173}
+--- !u!114 &330585553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330585543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c731a4603b93d4193a1dbf462aa93396, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MenuFinNivel
 --- !u!1 &341887882
 GameObject:
   m_ObjectHideFlags: 0
@@ -1427,9 +1456,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 330585552}
-        m_TargetAssemblyTypeName: MenuPausa, Assembly-CSharp
-        m_MethodName: MostrarMenuOpciones
+      - m_Target: {fileID: 330585553}
+        m_TargetAssemblyTypeName: MenuFinNivel, Assembly-CSharp
+        m_MethodName: ReintentarNivel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2582,9 +2611,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 330585552}
-        m_TargetAssemblyTypeName: MenuPausa, Assembly-CSharp
-        m_MethodName: MostrarMenuOpciones
+      - m_Target: {fileID: 330585553}
+        m_TargetAssemblyTypeName: MenuFinNivel, Assembly-CSharp
+        m_MethodName: SiguienteNivel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4982,6 +5011,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1527524276}
+  - component: {fileID: 1527524277}
   m_Layer: 0
   m_Name: AdminBloques
   m_TagString: Untagged
@@ -5009,6 +5039,19 @@ Transform:
   - {fileID: 8817441636588168572}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1527524277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527524275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fe4f4b0071a048e1af46d0c38adde4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AdministradorBloques
+  MenuFinNivel: {fileID: 1964602097}
 --- !u!1 &1546513616
 GameObject:
   m_ObjectHideFlags: 0
@@ -5151,27 +5194,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2921148126632228643, guid: 878046be6a8ba4b2d8b1cff9756d96e3, type: 3}
   m_PrefabInstance: {fileID: 2093954276}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1592317626
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1292772878}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55a97e2a224ce400b99511c9038af912, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ControlBordes
-  radio: 1
-  mantenerEnPantalla: 0
-  estarEnPantalla: 1
-  anchoCamara: 0
-  altoCamara: 0
-  salioDerecha: 0
-  salioIzquierda: 0
-  salioArriba: 0
-  salioAbajo: 0
 --- !u!1 &1636572261
 GameObject:
   m_ObjectHideFlags: 0
@@ -6334,21 +6356,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 15398842}
     m_Modifications:
     - target: {fileID: -7946455717913249602, guid: 878046be6a8ba4b2d8b1cff9756d96e3, type: 3}
-      propertyPath: velocidadBola
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: -7946455717913249602, guid: 878046be6a8ba4b2d8b1cff9756d96e3, type: 3}
-      propertyPath: lanzarAction.m_Name
-      value: Lanzar
-      objectReference: {fileID: 0}
-    - target: {fileID: 2921148126632228643, guid: 878046be6a8ba4b2d8b1cff9756d96e3, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.24999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 2921148126632228643, guid: 878046be6a8ba4b2d8b1cff9756d96e3, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.33333334
-      objectReference: {fileID: 0}
+      propertyPath: BolaDestruida.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 309072251}
     - target: {fileID: 2921148126632228643, guid: 878046be6a8ba4b2d8b1cff9756d96e3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.38
@@ -6389,25 +6399,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5425989815756223891, guid: 878046be6a8ba4b2d8b1cff9756d96e3, type: 3}
-      propertyPath: m_IsKinematic
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8072478456268050064, guid: 878046be6a8ba4b2d8b1cff9756d96e3, type: 3}
       propertyPath: m_Name
       value: Bola
       objectReference: {fileID: 0}
-    - target: {fileID: 8072478456268050064, guid: 878046be6a8ba4b2d8b1cff9756d96e3, type: 3}
-      propertyPath: m_TagString
-      value: Bola
+    - target: {fileID: 8896393819687750834, guid: 878046be6a8ba4b2d8b1cff9756d96e3, type: 3}
+      propertyPath: salioAbajo
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896393819687750834, guid: 878046be6a8ba4b2d8b1cff9756d96e3, type: 3}
+      propertyPath: salioArriba
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896393819687750834, guid: 878046be6a8ba4b2d8b1cff9756d96e3, type: 3}
+      propertyPath: salioDerecha
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8896393819687750834, guid: 878046be6a8ba4b2d8b1cff9756d96e3, type: 3}
+      propertyPath: salioIzquierda
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8072478456268050064, guid: 878046be6a8ba4b2d8b1cff9756d96e3, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1592317626}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 878046be6a8ba4b2d8b1cff9756d96e3, type: 3}
 --- !u!1 &2131659861
 GameObject:

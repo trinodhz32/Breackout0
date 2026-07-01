@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 601170643230010210}
   - component: {fileID: 5425989815756223891}
   - component: {fileID: -7946455717913249602}
+  - component: {fileID: 8896393819687750834}
   m_Layer: 0
   m_Name: Bola
   m_TagString: Bola
@@ -31,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.24999994, y: 1, z: 0.33333334}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -137,7 +138,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
@@ -153,12 +154,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21180abb8787144b397fdb4a4784bdb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bola
-  lanzarAction:
-    m_Name: Lanzar
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: f1541956-ba86-47e9-9260-dcf2a8ca0770
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
+  velocidadBola: 30
+  BolaDestruida:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: AdministradorVidas, Assembly-CSharp
+        m_MethodName: EliminarVida
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8896393819687750834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8072478456268050064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55a97e2a224ce400b99511c9038af912, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ControlBordes
+  radio: 1
+  mantenerEnPantalla: 0
+  estarEnPantalla: 1
+  anchoCamara: 0
+  altoCamara: 0
+  salioDerecha: 0
+  salioIzquierda: 0
+  salioArriba: 0
+  salioAbajo: 0
