@@ -6,13 +6,13 @@ using System.Collections.Generic;
 public class Opciones : PuntajePersistente
 {
 public float velocidadBola = 30;
-public dificultad NivelDificultad = dificultad.facil;
+public dificultad NivelDificultad = dificultad.Facil;
 
 public enum dificultad
     {
-        facil,
-        normal,
-        dificil
+        Facil,
+        Normal,
+        Dificil
     }
     public void CambiarVelocidad(float nuevaVelocidad)
     {
@@ -22,4 +22,5 @@ public enum dificultad
     {
         NivelDificultad = (dificultad)nuevaDificultad;
     }
+    
 }

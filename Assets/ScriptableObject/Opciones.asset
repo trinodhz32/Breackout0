@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Opciones
   m_EditorClassIdentifier: Assembly-CSharp::Opciones
   velocidadBola: 30
-  NivelDificultad: 2
+  NivelDificultad: 0

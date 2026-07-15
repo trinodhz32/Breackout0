@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f75bb9acb35e84a5c96a2cdb194cdada, type: 3}
-  m_Name: PuntajeAlto
+  m_Name: PuntajeAlto N2
   m_EditorClassIdentifier: Assembly-CSharp::PuntajeAlto1
   puntaje: 0
   puntajeAlto: 0
