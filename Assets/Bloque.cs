@@ -26,7 +26,20 @@ public class Bloque : MonoBehaviour
     
     void Start() 
     {
-        
+         int resistenciaBase = resistencia;
+
+switch (opciones.NivelDificultad)
+{
+    case Opciones.dificultad.Facil:
+        resistencia = resistenciaBase;
+        break;
+    case Opciones.dificultad.Normal:
+        resistencia = resistenciaBase + 1;
+        break;
+    case Opciones.dificultad.Dificil:
+        resistencia = resistenciaBase + 2;
+        break;
+}
     } 
 
     
@@ -43,5 +56,8 @@ public class Bloque : MonoBehaviour
     {
         
     }
+
+
+public Opciones opciones;
 
 } 

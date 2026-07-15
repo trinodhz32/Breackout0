@@ -41,6 +41,8 @@ MonoBehaviour:
   m_OverrideGlobalSceneList: 1
   m_Scenes:
   - m_enabled: 1
+    m_path: Assets/Scenes/Menu principal.unity
+  - m_enabled: 1
     m_path: Assets/Scenes/Nivel 1.unity
   m_HasScriptingDefines: 0
   m_ScriptingDefines: []
