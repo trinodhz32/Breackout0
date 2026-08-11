@@ -34,7 +34,7 @@ public class Puntaje : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        puntajeAltoSO.puntaje += 50;
+     
     }
  
     void Update()
@@ -58,5 +58,9 @@ public class Puntaje : MonoBehaviour
         // }
 
         // textoPuntajeAlto.text = "Puntaje Alto: " + puntajeAlto;
+    }
+    public void AumentarPuntaje(int puntos)
+    {
+        puntajeAltoSO.puntaje += puntos;
     }
 }
